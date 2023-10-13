@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Interst-Profit-Total Amount</title>
+    <title>Interst-Principal-Total Amount</title>
     <!-- css stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,16 +14,19 @@
     <section class="container">
         <div>
             <!-- interest -->
-            <h1>Interst: <span id="display-interest">0</span></h1><br>
+            <h1>Interest: <span id="display-interest">0</span></h1><br>
             <!-- total amount -->
             <h1>Total Amount: <span id="display-total">0</span></h1><br>
             <div>
-                <!-- profit input -->
-                <input type="text" placeholder="Profit" id="profit-input">
-                <!-- rate input -->
-                <input type="text" placeholder="Rate Of Interst" id="rate-input"><br>
+                <!-- principal input -->
+                <span class="fs-4">Principal</span><br>
+                <input type="text" placeholder="Principal" id="principal-input"><br>
+                <!-- rate of interest input -->
+                <span class="fs-4">Rate Of Interest</span><br>
+                <input type="text" placeholder="Rate Of Interest" id="rate-input"><br>
                 <!-- time input -->
-                <input type="text" placeholder="Time" id="time-input"><br>
+                <span class="fs-4">Time</span><br>
+                <input type="text" placeholder="Time (Year)" id="time-input">
             </div>
             <!-- calculate btn -->
             <button id="calculate-btn">Calculate</button>

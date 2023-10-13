@@ -1,18 +1,18 @@
 // get input value
 const getInputValue = () => {
-    // profit field
-    const profitField = document.getElementById('profit-input').value;
+    // principal field
+    const principalField = document.getElementById('principal-input').value;
     // time field
     const timeField = document.getElementById('time-input').value;
     // rate field
     const rateField = document.getElementById('rate-input').value;
     // call function
-    calculate(profitField, timeField, rateField)
+    calculate(principalField, timeField, rateField);
 }
 // calculate
-const calculate = (profitField, timeField, rateField) => {
-    // profit
-    const profit = parseFloat(profitField);
+const calculate = (principalField, timeField, rateField) => {
+    // principal
+    const principal = parseFloat(principalField);
     // time
     const time = parseFloat(timeField);
     // rate
@@ -20,9 +20,9 @@ const calculate = (profitField, timeField, rateField) => {
     // rate of interest
     const rateOfInterest = rate / 100;
     // interest
-    const interest = profit * rateOfInterest * time;
+    const interest = principal * time * rateOfInterest;
     // total amount
-    const totalAmount = interest + profit;
+    const totalAmount = interest + principal;
     // call function
     displayResult(interest, totalAmount);
 }
@@ -37,15 +37,15 @@ const displayResult = (interest, totalAmount) => {
 }
 // calculate-btn
 document.getElementById('calculate-btn').addEventListener('click', function () {
-    // profit field
-    const profitField = document.getElementById('profit-input').value;
+    // principal field
+    const principalField = document.getElementById('principal-input').value;
     // time field
     const timeField = document.getElementById('time-input').value;
     // rate field
     const rateField = document.getElementById('rate-input').value;
     // if / else
-    if (profitField == '' || timeField == '' || rateField == '' || isNaN(profitField) |isNaN(timeField) 
-        || isNaN(rateField) || profitField <= 0 || timeField <= 0 || rateField <= 0) {
+    if (principalField == '' || timeField == '' || rateField == '' || isNaN(principalField) |isNaN(timeField) 
+        || isNaN(rateField) || principalField <= 0 || timeField <= 0 || rateField <= 0) {
         // alert
         alert('Please enter positive number');
     } 

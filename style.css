@@ -23,6 +23,7 @@ input{
     background: white;
     padding: 1rem;
     margin: 1rem;
+    margin-top: 0.5rem;
     font-size: larger;
     font-weight: 500;
     border: 1px solid gray;
@@ -53,6 +54,12 @@ button:hover{
 h1{
     font-size: 35px;
     margin: 0px;
+}
+/* font size */
+.fs-4{
+    font-size: larger;
+    font-weight: 600;
+    margin-left: 1rem;
 }
 /* media query */
 /* max width 800px */
